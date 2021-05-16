@@ -108,13 +108,47 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\luntan.mdf" />
     <Content Include="App_Data\luntan_log.ldf" />
+    <Content Include="App_Data\med.mdf" />
+    <Content Include="App_Data\med_log.ldf">
+      <DependentUpon>med.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap.css" />
+    <Content Include="Css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Css\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="Css\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="Css\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Css\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Css\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Css\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Css\bootstrap\js\bootstrap.js" />
+    <Content Include="Css\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Css\self\drugdetail.css" />
+    <Content Include="Css\self\drugindex.css" />
+    <Content Include="curedetail.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="drugadd.aspx" />
+    <Content Include="drugdetail.aspx" />
+    <Content Include="drugedit.aspx" />
+    <Content Include="drugindex.aspx" />
+    <Content Include="drugsearch.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -155,6 +189,18 @@
     <Content Include="Images\论坛\bg.png" />
     <Content Include="Images\论坛\top.jpg" />
     <Content Include="Images\论坛\top1.jpg" />
+    <Content Include="Resources\images\drug\1.jpg" />
+    <Content Include="Resources\images\drug\10.jpg" />
+    <Content Include="Resources\images\drug\11.jpg" />
+    <Content Include="Resources\images\drug\2.jpg" />
+    <Content Include="Resources\images\drug\3.jpg" />
+    <Content Include="Resources\images\drug\4.jpg" />
+    <Content Include="Resources\images\drug\5.jpg" />
+    <Content Include="Resources\images\drug\6.jpg" />
+    <Content Include="Resources\images\drug\7.jpg" />
+    <Content Include="Resources\images\drug\8.jpg" />
+    <Content Include="Resources\images\drug\9.jpg" />
+    <Content Include="Resources\images\style\background.jpg" />
     <Content Include="论坛1.aspx" />
     <Content Include="发布论坛.aspx" />
     <Content Include="实时热点.aspx" />
@@ -165,6 +211,30 @@
     <Content Include="节气2.aspx" />
     <Content Include="论坛资讯.csproj.user" />
     <Content Include="详细页面.aspx" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="Css\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Css\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="drugadd.Master" />
+    <Content Include="drugindex.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -218,12 +288,68 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="curedetail.aspx.cs">
+      <DependentUpon>curedetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="curedetail.aspx.designer.cs">
+      <DependentUpon>curedetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drugadd.aspx.cs">
+      <DependentUpon>drugadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugadd.aspx.designer.cs">
+      <DependentUpon>drugadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drugadd.Master.cs">
+      <DependentUpon>drugadd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugadd.Master.designer.cs">
+      <DependentUpon>drugadd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="drugdetail.aspx.cs">
+      <DependentUpon>drugdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugdetail.aspx.designer.cs">
+      <DependentUpon>drugdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drugedit.aspx.cs">
+      <DependentUpon>drugedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugedit.aspx.designer.cs">
+      <DependentUpon>drugedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drugindex.aspx.cs">
+      <DependentUpon>drugindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugindex.aspx.designer.cs">
+      <DependentUpon>drugindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drugindex.Master.cs">
+      <DependentUpon>drugindex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugindex.Master.designer.cs">
+      <DependentUpon>drugindex.Master</DependentUpon>
+    </Compile>
+    <Compile Include="drugsearch.aspx.cs">
+      <DependentUpon>drugsearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drugsearch.aspx.designer.cs">
+      <DependentUpon>drugsearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
